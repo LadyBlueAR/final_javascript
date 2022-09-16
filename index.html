@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Curso Javascript</title>
+    <script defer src="./js/emotes.js"></script>
+    <script defer src="./js/ilustraciones.js"></script>
+</head>
+<style>
+    body {
+        margin: 0; padding: 0; text-align: center;
+    }
+    .box {
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px brown;
+        margin: 10px;
+        padding: 20px;
+    }
+    .tamanio {
+        font-size: 10px;
+    }
+    .boxes {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .sec {
+        border: 1px solid black;
+    }
+    .textoIlustraciones {
+        color: brown;
+    }
+    .btn-hide {
+        display: none;
+    }
+    ul {
+        list-style: none;
+    }
+</style>
+<body>
+    <h1>LADY BLUE</h1>
+    <h2>ILUSTRACIONES DIGITALES</h2>
+
+    <section>
+        <article class="sec">
+            <h3 style="text-align: center;">Cotiza tus Emotes</h3>
+            <p>El monto total del presupuesto se calcula por el precio y la cantidad de los emotes requeridos.</p>
+            <p>El tiempo de entrega es a razón de dos días por emote.</p>    
+            <div class="boxes">
+                <div class="box">
+                    <h2>A</h2>
+                    <p class="tamanio">28 x 28</p>
+                    <p>$10</p>
+                </div>
+                <div class="box">
+                    <h2>B</h2>
+                    <p class="tamanio">56 x 56</p>
+                    <p>$20</p>
+                </div>
+                <div class="box">
+                    <h2>C</h2>
+                    <p class="tamanio">112 x 112</p>
+                    <p>$30</p>
+                </div>        
+            </div>
+            <p>Abre la consola y ejecuta la función: <strong style="color:brown;">presupuesto()</strong></p>
+            <p>También puedes consultar nuestros paquetes ejecutando la función: <strong style="color:brown;">consultaPaquetes()</strong></p>
+        </article>
+        <article class="sec">
+            <h3>Cotiza tus Ilustraciones</h3>
+            <p>Tenemos tres tipos de ilustraciones.</p>
+            <p>Lineart</p>
+            <p>Blanco y Negro</p>
+            <p>Color</p>
+            <p>Cada una de ellas puede ser realizada en tres tipos de tamaño diferentes.</p>
+            <button id="listarIlustraciones">Listar Ilustraciones</button>
+            <ul></ul>
+            <p>También puedes buscar alguna en particular utilizando <strong style="color: brown">buscarIlustracion() </strong></p>
+            <p>El tiempo de entrega dependerá del tipo de ilustración y tamaño elegidos.</p>
+        </article>
+    </section>
+   
+    
+    
+</body>
+</html>
