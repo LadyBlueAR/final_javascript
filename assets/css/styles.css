@@ -1,0 +1,49 @@
+*{margin:0; padding:0}
+
+body {text-align: center; font-family: Stardos, Arial, Helvetica, sans-serif;}
+
+@font-face {
+    font-family: "Stardos";
+    src: url(../fonts/StardosStencil-Regular.ttf);
+}
+h1 {
+    font-size: 60px;
+    margin: 40px 40px 0px 40px
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.resalta {
+    color: brown;
+    font-weight: bold;
+}
+#buscaIlustracion {
+    width: 80%;
+}
+.btn { 
+    background-color: #ff545452 !important;
+    border-radius: 5px;
+    width: 100%
+}
+.btn-main {
+    background-color: #ff545452 ;
+    margin: 20px;
+    width: 20%;
+}
+.btn-main:hover {
+    background-color: brown;
+}
+#total {
+    font-size: 25px;
+    margin: 20px;
+}
+/*--TABLAS--*/
+#tabla {    
+    margin: 2% auto;
+    width: 50%;
+}
+#tablaPresupuesto {
+    margin: auto;
+    width: 50%;
+}
