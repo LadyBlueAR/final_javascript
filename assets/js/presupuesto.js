@@ -23,7 +23,8 @@ function BotonEliminar() {
 function calcularTotal () {
     const total = presupuesto.reduce((tot, pres) => tot + pres.precio, 0)
     let leyenda = document.getElementById("total")
-    leyenda.innerText = `El total de su compra será de $ ${total}`
+    total > 0 ? leyenda.innerText = `El total de su compra será de $ ${total}` : leyenda.innerText = `No ha agregado nada al presupuesto.`
+    
 }
 
 function EliminarPresupuesto(id) { 

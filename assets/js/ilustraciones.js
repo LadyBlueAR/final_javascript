@@ -58,9 +58,8 @@ function agregarAPresupuesto(id) {
     localStorage.setItem("presupuesto", JSON.stringify(presupuesto))
 }
 function recuperarPresupuesto() {
-  if (localStorage.getItem("presupuesto")) {
-    presupuesto = JSON.parse(localStorage.getItem("presupuesto"))
-  }
+  /* Operador AND */  
+  localStorage.getItem("presupuesto") && (presupuesto = JSON.parse(localStorage.getItem("presupuesto")))
 }
 /* Llamada Funciones */
 generador()
