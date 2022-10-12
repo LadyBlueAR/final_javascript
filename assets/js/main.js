@@ -5,17 +5,16 @@ const URL = "assets/bbdd/cards.json"
 var tarjetas = []
 let contenidoHTML = ""
 
-cargarPresupuesto = async ()=> {
-    try {
-        const response = await fetch(URL)
-        const data = await response.json()
-        tarjetas = data
-        tarjetas.forEach(element => contenidoHTML += mostrarCard(element));
-    } catch (error) {
+/* Fecth y Promesas */
+const cargarPresupuesto = async ()=> {
+    fetch(URL)
+        .then(response => response.json())
+        .then(data => tarjetas = data)
+        .then(tarjetas => tarjetas.forEach(element => contenidoHTML += mostrarCard(element)))
 
-    } finally {
-        contenedor.innerHTML = contenidoHTML
-    }
+        .catch(error => console.log(error))
+
+        .finally(()=> contenedor.innerHTML = contenidoHTML)
 }
 
 btnFetch.addEventListener("click", () => {
