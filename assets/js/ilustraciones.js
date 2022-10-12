@@ -16,7 +16,6 @@ const buscaIlustracion = document.getElementById("buscaIlustracion")
 let presupuesto = [];
 
 
-
 /* Funciones Generales */
 function generador() {
     ilustraciones.push(new Ilustracion(01,"ILUSTRACIÓN PEQUEÑA - LINEART","500 x 500", 50, 1,0));
@@ -70,5 +69,3 @@ generador()
 cargarTabla()
 Botones()
 recuperarPresupuesto()
-
-

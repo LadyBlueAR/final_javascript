@@ -1,0 +1,20 @@
+[
+    {
+        "title": "LINEART",
+        "imagen": "lineart.jpg",
+        "desc": "Ilustraciones con líneas en negro de arte conceptual"     
+    },
+    {
+        "title": "BLANCO Y NEGRO",
+        "imagen": "byn.jpg",
+        "desc": "Ilustraciones pintadas en blanco, negro y gamas de grises."
+     
+    },
+    {
+        "title": "COLOR",
+        "imagen": "color.jpg",
+        "desc": "Ilustraciones realizada con toda gama de colores."
+     
+    }
+
+]
